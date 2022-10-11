@@ -1,6 +1,6 @@
 import { QueryClient } from "react-query"
 
-let medusaUrl = "https://ghazali-server-x2nb.onrender.com"
+let medusaUrl = "https://ghazali-server.herokuapp.com/"
 
 // deprecated
 if (process.env.GATSBY_STORE_URL) {
