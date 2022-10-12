@@ -1,6 +1,8 @@
 import axios from "axios"
 
-let baseURL = "https://ghazali-server.herokuapp.com/"
+const baseURL = "http://13.126.38.12:9000/"
+
+
 
 // deprecated
 if (process.env.GATSBY_STORE_URL) {
