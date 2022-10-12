@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const baseURL = "http://13.126.38.12:9000/"
+let baseURL = "http://localhost:9000/"
 
 
 
@@ -11,7 +11,7 @@ if (process.env.GATSBY_STORE_URL) {
 
 // takes precedence over GATSBY_STORE_URL
 if (process.env.GATSBY_MEDUSA_BACKEND_URL) {
-  baseURL = process.env.GATSBY_MEDUSA_BACKEND_URL
+  baseURL = process.env.GATSBY_MEDUSA_BACKEND_URL || ''
 }
 
 const client = axios.create({ baseURL })
